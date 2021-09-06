@@ -1,0 +1,54 @@
+.about {
+  background-color: #002147;
+  padding: 50px 0 200px 0;
+}
+
+.about__head {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about__para {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about__highlights {
+  position: relative;
+  top: -150px;
+  z-index: 100;
+  background-color: white;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgba(34, 34, 34, 0.2);
+}
+
+.highlight__card {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlight__card:nth-child(2) {
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+}
+.highlight__card img {
+  width: 100px;
+  height: 100px;
+}
+.highlight__card h2 {
+  color: #002147;
+  text-align: center;
+  margin: 15px auto;
+}
+.highlight__card p {
+  text-align: center;
+  color: grey;
+}

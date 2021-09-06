@@ -1,0 +1,21 @@
+.stack {
+  padding: 100px;
+}
+.stack .container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  row-gap: 60px;
+}
+.stack__card {
+  padding: 10px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.stack__card img {
+  max-width: 100%;
+  height: 80px;
+}
