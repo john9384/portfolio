@@ -4,7 +4,7 @@ import HeadImg from "../../assets/images/article-img.jpeg";
 
 export default function Article() {
   return (
-    <div className="article">
+    <div className="article" id="section-article">
       <h2 className="article__head">Article</h2>
       <div className="container">
         <div className="article__img">

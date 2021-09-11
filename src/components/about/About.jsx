@@ -6,7 +6,7 @@ import Deploy from "../../assets/svg/cloud-computing.svg";
 function About() {
   return (
     <>
-      <div className="about">
+      <div className="about" id="section-about">
         <div className="container">
           <h1 className="about__head">About Me</h1>
           <p className="about__para">
@@ -45,6 +45,9 @@ function About() {
           </p>
         </div>
       </div>
+      <a href="/" className="about__cta">
+        Resume
+      </a>
     </>
   );
 }

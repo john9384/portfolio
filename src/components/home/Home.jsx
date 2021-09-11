@@ -2,85 +2,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Home.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "../navbar/Navbar";
+import { Link } from "react-scroll";
+
 function Home() {
   return (
     <>
-      <header className="header">
-        <div className="navbar">
-          <div className="container">
-            <h1 className="navbar__logo">
-              <span>J</span>
-              <span>&nbsp;</span>
-              <span>D</span>
-            </h1>
-            <nav className="nav">
-              <ul className="nav__list">
-                <li className="nav__item">Home</li>
-                <li className="nav__item">About Me</li>
-                <li className="nav__item">Portfolio</li>
-                <li className="nav__item">Article</li>
-                <li className="nav__item">Contact</li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+      <header className="header" id="section-home">
+        <Navbar />
 
         <div className="container header__welcome">
           <h1 className="header__name">John Damilola Ogungbure</h1>
           <h2 className="header__title">Fullstack Web Developer</h2>
-          <a href="/" className="header__welcome-btn">
+          <Link
+            to="section-about"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={1000}
+            className="header__welcome-btn"
+          >
             Read More
-          </a>
+          </Link>
         </div>
 
-        <a href="/" className="header__cta">
+        <Link
+          to="section-portfolio"
+          spy={true}
+          smooth={true}
+          offset={-60}
+          duration={1000}
+          className="header__cta"
+        >
           <span className="header__cta--text">View Portfolio</span>
           <FontAwesomeIcon icon={faChevronDown} className="header__cta--icon" />
-        </a>
-        {/* <div className="header__socials">
-          <a href="/" className="header__socials--icon">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M33.6901 9C32.5351 9.525 31.2901 9.87 30.0001 10.035C31.3201 9.24 32.3401 7.98 32.8201 6.465C31.5751 7.215 30.1951 7.74 28.7401 8.04C27.5551 6.75 25.8901 6 24.0001 6C20.4751 6 17.5951 8.88 17.5951 12.435C17.5951 12.945 17.6551 13.44 17.7601 13.905C12.4201 13.635 7.66506 11.07 4.50006 7.185C3.94506 8.13 3.63006 9.24 3.63006 10.41C3.63006 12.645 4.75506 14.625 6.49506 15.75C5.43006 15.75 4.44006 15.45 3.57006 15V15.045C3.57006 18.165 5.79006 20.775 8.73006 21.36C7.78615 21.6183 6.7952 21.6543 5.83506 21.465C6.24247 22.7437 7.04036 23.8626 8.11658 24.6644C9.1928 25.4662 10.4932 25.9105 11.8351 25.935C9.5605 27.7357 6.74105 28.709 3.84006 28.695C3.33006 28.695 2.82006 28.665 2.31006 28.605C5.16006 30.435 8.55006 31.5 12.1801 31.5C24.0001 31.5 30.4951 21.69 30.4951 13.185C30.4951 12.9 30.4951 12.63 30.4801 12.345C31.7401 11.445 32.8201 10.305 33.6901 9Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-          <a href="/" className="header__socials--icon">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M28.5 4.5C29.2956 4.5 30.0587 4.81607 30.6213 5.37868C31.1839 5.94129 31.5 6.70435 31.5 7.5V28.5C31.5 29.2956 31.1839 30.0587 30.6213 30.6213C30.0587 31.1839 29.2956 31.5 28.5 31.5H7.5C6.70435 31.5 5.94129 31.1839 5.37868 30.6213C4.81607 30.0587 4.5 29.2956 4.5 28.5V7.5C4.5 6.70435 4.81607 5.94129 5.37868 5.37868C5.94129 4.81607 6.70435 4.5 7.5 4.5H28.5ZM27.75 27.75V19.8C27.75 18.5031 27.2348 17.2593 26.3178 16.3422C25.4007 15.4252 24.1569 14.91 22.86 14.91C21.585 14.91 20.1 15.69 19.38 16.86V15.195H15.195V27.75H19.38V20.355C19.38 19.2 20.31 18.255 21.465 18.255C22.022 18.255 22.5561 18.4762 22.9499 18.8701C23.3438 19.2639 23.565 19.798 23.565 20.355V27.75H27.75ZM10.32 12.84C10.9883 12.84 11.6293 12.5745 12.1019 12.1019C12.5745 11.6293 12.84 10.9883 12.84 10.32C12.84 8.925 11.715 7.785 10.32 7.785C9.64768 7.785 9.00289 8.05208 8.52748 8.52748C8.05208 9.00289 7.785 9.64768 7.785 10.32C7.785 11.715 8.925 12.84 10.32 12.84ZM12.405 27.75V15.195H8.25V27.75H12.405Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-          <a href="/" className="header__socials--icon">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 3C16.0302 3 14.0796 3.38799 12.2597 4.14181C10.4399 4.89563 8.78628 6.00052 7.3934 7.3934C4.58035 10.2064 3 14.0218 3 18C3 24.63 7.305 30.255 13.26 32.25C14.01 32.37 14.25 31.905 14.25 31.5V28.965C10.095 29.865 9.21 26.955 9.21 26.955C8.52 25.215 7.545 24.75 7.545 24.75C6.18 23.82 7.65 23.85 7.65 23.85C9.15 23.955 9.945 25.395 9.945 25.395C11.25 27.675 13.455 27 14.31 26.64C14.445 25.665 14.835 25.005 15.255 24.63C11.925 24.255 8.43 22.965 8.43 17.25C8.43 15.585 9 14.25 9.975 13.185C9.825 12.81 9.3 11.25 10.125 9.225C10.125 9.225 11.385 8.82 14.25 10.755C15.435 10.425 16.725 10.26 18 10.26C19.275 10.26 20.565 10.425 21.75 10.755C24.615 8.82 25.875 9.225 25.875 9.225C26.7 11.25 26.175 12.81 26.025 13.185C27 14.25 27.57 15.585 27.57 17.25C27.57 22.98 24.06 24.24 20.715 24.615C21.255 25.08 21.75 25.995 21.75 27.39V31.5C21.75 31.905 21.99 32.385 22.755 32.25C28.71 30.24 33 24.63 33 18C33 16.0302 32.612 14.0796 31.8582 12.2597C31.1044 10.4399 29.9995 8.78628 28.6066 7.3934C27.2137 6.00052 25.5601 4.89563 23.7403 4.14181C21.9204 3.38799 19.9698 3 18 3Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-        </div> */}
+        </Link>
       </header>
     </>
   );
