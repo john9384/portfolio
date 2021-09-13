@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import "./FooterTab.css";
+import "./FooterMobile.css";
 
 import GithubLogo from "../../assets/svg/github-logo.svg";
 import LinkedInLogo from "../../assets/svg/linkedin.svg";

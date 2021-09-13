@@ -1,5 +1,7 @@
 import React from "react";
 import "./About.css";
+import "./AboutTab.css";
+import "./AboutMobile.css";
 import Plan from "../../assets/svg/planning.svg";
 import CodeIcon from "../../assets/svg/code.svg";
 import Deploy from "../../assets/svg/cloud-computing.svg";

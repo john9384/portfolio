@@ -1,6 +1,8 @@
 .navbar {
+  width: 100%;
   transition: all 0.5s;
   z-index: 1000;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .scrolled {
   position: fixed;
@@ -9,11 +11,10 @@
   width: 100%;
 }
 .navbar-bg {
-  /* background-color: #002147; */
-  background-color: #13191c;
+  background-color: #002147;
+  /* background-color: #13191c; */
 }
 .navbar .container {
-  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -21,7 +22,7 @@
 }
 .navbar__logo {
   color: white;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   font-family: "Odibee Sans";
   text-transform: uppercase;
@@ -47,7 +48,7 @@
   -webkit-text-fill-color: transparent;
 }
 .nav {
-  font-size: 15px;
+  font-size: 1.6rem;
   color: white;
 }
 .nav__list {
@@ -55,14 +56,12 @@
   list-style: none;
 }
 .nav__item {
-  margin: 0 7.5px;
+  margin: 0 1rem;
   padding: 0;
   position: relative;
   cursor: pointer;
 }
-/* .active {
-  border-bottom: 1px solid white;
-} */
+
 .active::after,
 .nav__item::after {
   content: "";
@@ -88,4 +87,58 @@
 }
 .nav__item:hover::after {
   width: 100%;
+}
+
+.mobile-nav {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+}
+.mobile-nav button {
+  background: none;
+  border: none;
+}
+.mobile-nav img {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  animation: popin 1s;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@keyframes popin {
+  0% {
+    transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popout {
+  0% {
+    transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-popin {
+  animation: popin 1s;
+}
+.animate-popout {
+  animation: popout 1s;
 }

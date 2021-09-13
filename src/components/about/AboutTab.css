@@ -1,0 +1,37 @@
+@media screen and (max-width: 1025px) {
+  .about__highlights {
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: 0 0 0 0;
+  }
+  .highlight__card {
+    width: 350px;
+    background-color: white;
+    padding: 5rem;
+  }
+  .highlight__card:nth-child(2) {
+    border-right: none;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about__highlights {
+    border-radius: 0;
+    box-shadow: 0 0 5px 1px rgba(34, 34, 34, 0.1);
+    max-width: max-content;
+    padding: 0;
+  }
+  .about__para {
+    font-size: 1.5rem;
+  }
+  .highlight__card {
+    margin: 0 auto;
+    box-shadow: 0 0 0 0;
+    width: 220px;
+    padding: 3rem;
+  }
+  .highlight__card:nth-child(2) {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+  }
+}

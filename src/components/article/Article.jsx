@@ -1,5 +1,7 @@
 import React from "react";
 import "./Article.css";
+import "./ArticleTab.css";
+import "./ArticleMobile.css";
 import HeadImg from "../../assets/images/article-img.jpeg";
 
 export default function Article() {

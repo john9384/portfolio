@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.css";
+import "./ContactTab.css";
+import "./ContactMobile.css";
 
 export default function Contact() {
   return (

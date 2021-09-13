@@ -1,5 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
+import "./PortfolioTab.css";
+import "./PortfolioMobile.css";
+
 import TestImg from "../../assets/images/article-img.jpeg";
 import ScrollAnimation from "react-animate-on-scroll";
 export default function Portfolio() {

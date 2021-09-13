@@ -1,0 +1,20 @@
+@media screen and (max-width: 650px) {
+  .stack {
+    padding: 0;
+  }
+  .stack .container {
+    padding: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    row-gap: 2rem;
+  }
+  .stack__card {
+    height: 70px;
+  }
+  .stack__card img {
+    height: 40px;
+  }
+  .stack__card span {
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+  }
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 1025px) {
+  .header__name {
+    font-size: 3rem;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+}

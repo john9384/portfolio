@@ -1,6 +1,6 @@
 .portfolio {
-  margin-top: 50px;
-  padding: 80px 0 100px 0;
+  margin: 5rem auto;
+  padding: 5rem 0;
   border-top: 1px solid rgb(247, 242, 242);
   border-bottom: 1px solid rgb(247, 242, 242);
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import "./Stack.css";
+import "./StackTab.css";
+import "./StackMobile.css";
+
 import JavaScript from "../../assets/images/javascript-logo.png";
 import Typescript from "../../assets/images/typescript-logo.png";
 import Python from "../../assets/images/python-logo.png";
@@ -12,7 +15,6 @@ import Django from "../../assets/images/django-logo.png";
 import Databases from "../../assets/images/databases-logo.png";
 import Git from "../../assets/images/git-logo.png";
 import Docker from "../../assets/images/docker-logo.png";
-
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Stack() {
@@ -31,7 +33,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1500}
+          delay={100}
           className="stack__card"
         >
           <img src={Typescript} alt="typescript" />
@@ -40,7 +42,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1000}
+          delay={900}
           className="stack__card"
         >
           <img src={Python} alt="python" />
@@ -58,7 +60,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1200}
+          delay={700}
           className="stack__card"
         >
           <img src={Angular} alt="angular" />
@@ -67,7 +69,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1300}
+          delay={500}
           className="stack__card"
         >
           <img src={Redux} alt="redux" />
@@ -76,7 +78,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1400}
+          delay={400}
           className="stack__card"
         >
           <img src={NodeJs} alt="nodejs" />
@@ -94,7 +96,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={900}
+          delay={300}
           className="stack__card"
         >
           <img src={Django} alt="django" />
@@ -103,7 +105,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1600}
+          delay={200}
           className="stack__card"
         >
           <img src={Databases} alt="" />
@@ -121,7 +123,7 @@ export default function Stack() {
         <ScrollAnimation
           animateIn="fadeIn"
           animateOut="fadeOut"
-          delay={1100}
+          delay={150}
           className="stack__card"
         >
           <img src={Docker} alt="docker" />

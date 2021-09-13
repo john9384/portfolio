@@ -1,0 +1,11 @@
+@media screen and (max-width: 1025px) {
+  .stack .container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .stack .container {
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Home.css";
+import "./HomeTab.css";
+import "./HomeMobile.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../navbar/Navbar";
 import { Link } from "react-scroll";
