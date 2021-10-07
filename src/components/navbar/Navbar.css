@@ -15,7 +15,7 @@
   /* background-color: #13191c; */
 }
 .navbar .container {
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,14 +103,6 @@
   height: 100%;
   background: transparent;
   animation: popin 1s;
-}
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-  .mobile-nav {
-    display: block;
-  }
 }
 
 @keyframes popin {

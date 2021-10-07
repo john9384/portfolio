@@ -15,7 +15,7 @@ function Home() {
 
         <div className="container header__welcome">
           <h1 className="header__name">John Damilola Ogungbure</h1>
-          <h2 className="header__title">Fullstack Web Developer</h2>
+          <h2 className="header__title">Software Engineer</h2>
           <Link
             to="section-about"
             spy={true}

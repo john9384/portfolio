@@ -12,12 +12,11 @@ function About() {
         <div className="container">
           <h1 className="about__head">About Me</h1>
           <p className="about__para">
-            Exercitation minim quis reprehenderit voluptate sunt commodo magna
-            id enim eu dolor consequat aliqua qui. Occaecat Lorem sunt non
-            cupidatat commodo sit ex ea. Est aute deserunt amet eu in. Est anim
-            aliqua aliquip occaecat dolor laborum ea veniam minim minim. Veniam
-            Lorem ea voluptate sunt incididunt sit occaecat mollit. Exercitation
-            minim quis reprehenderit voluptate sunt commodo magna
+            Software engineer and tech enthusiast, with over three years of
+            intense experience and training in JavaScript, Python and its
+            ecosystem. I have worked with teams, building enterprise solutions
+            including marketplace, escrow trading platform, and chat system, to
+            mention a few.
           </p>
         </div>
       </div>
@@ -47,7 +46,12 @@ function About() {
           </p>
         </div>
       </div>
-      <a href="/" className="about__cta">
+      <a
+        href="https://drive.google.com/file/d/19Vmxk1J9JmyIcSSn5-6AvPT-KmgPKTif/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="about__cta"
+      >
         Resume
       </a>
     </>

@@ -6,12 +6,12 @@ import "./NavbarTab.css";
 import "./NavbarMobile.css";
 import MenuIcon from "../../assets/svg/menu.svg";
 import CloseIcon from "../../assets/svg/close.svg";
+import Mobilenav from "./MobileNav";
 function Navbar() {
   const [menuToggle, setMenuState] = useState(false);
   const updateAnimClass = () => {
-    const img = document.querySelector(".mobile-nav");
-    console.log("even hre");
-    console.log(img);
+    const img = document.querySelector(".mobile-nav img");
+
     if (img.classList.contains("animate-popin")) {
       img.classList.remove("animate-popin");
       img.classList.add("animate-popout");
@@ -52,10 +52,13 @@ function Navbar() {
           <span>&nbsp;</span>
           <span>D</span>
         </h1>
-        <nav className="mobile-nav animate-popin">
+        <nav className="mobile-nav">
           <button onClick={toggleState}>
             {menuToggle ? (
-              <img src={CloseIcon} alt="open" />
+              <>
+                <img src={CloseIcon} alt="open" />
+                <Mobilenav />
+              </>
             ) : (
               <img src={MenuIcon} alt="close" />
             )}
@@ -81,7 +84,7 @@ function Navbar() {
                 to="section-about"
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-50}
                 duration={1000}
               >
                 About Me
@@ -117,7 +120,7 @@ function Navbar() {
                 to="section-contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-80}
                 duration={1000}
               >
                 Contact

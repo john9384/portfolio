@@ -24,12 +24,22 @@ export default function Article() {
             by compilers, eliminating the complexity. Also, making it possible
             for almost anyone to create or modify computer programs. ...
           </p>
-          <a href="/" className="article__sum--cta">
+          <a
+            href="https://medium.com/@john_damilola/learning-a-programming-language-6c8df7ff85ef"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="article__sum--cta"
+          >
             Read Full Article <span>&#8594;</span>
           </a>
         </div>
       </div>
-      <a href="/" className="article__cta">
+      <a
+        href="https://medium.com/@john_damilola"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="article__cta"
+      >
         View Medium Profile
       </a>
     </div>

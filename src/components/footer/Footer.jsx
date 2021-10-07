@@ -20,18 +20,76 @@ export default function Footer() {
             Learning &#38; growing one day at a time
           </span>
           <div className="footer__icons">
-            <img src={GithubLogo} alt="" />
-            <img src={LinkedInLogo} alt="" />
-            <img src={MediumLogo} alt="" />
+            <a
+              href="https://github.com/john9384"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={GithubLogo} alt="" />
+            </a>
+            <a
+              href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={LinkedInLogo} alt="" />
+            </a>
+            <a
+              href="https://medium.com/@john_damilola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={MediumLogo} alt="" />
+            </a>
           </div>
         </div>
         <div className="footer__right">
           <ul className="footer__list">
-            <li className="footer__item">Github</li>
-            <li className="footer__item">LinkedIn</li>
-            <li className="footer__item">Download Resume</li>
-            <li className="footer__item">Medium</li>
-            <li className="footer__item">Replit</li>
+            <li className="footer__item">
+              <a
+                href="https://github.com/john9384"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </li>
+            <li className="footer__item">
+              <a
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li className="footer__item">
+              <a
+                href="https://drive.google.com/file/d/19Vmxk1J9JmyIcSSn5-6AvPT-KmgPKTif/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Resume
+              </a>
+            </li>
+            <li className="footer__item">
+              <a
+                href="https://medium.com/@john_damilola"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Medium
+              </a>
+            </li>
+            <li className="footer__item">
+              <a
+                href="https://replit.com/@JohnOgungbure"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Replit
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer__copyright">
