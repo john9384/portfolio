@@ -65,7 +65,7 @@ export default function Footer() {
             </li>
             <li className="footer__item">
               <a
-                href="https://drive.google.com/file/d/19Vmxk1J9JmyIcSSn5-6AvPT-KmgPKTif/view?usp=sharing"
+                href="https://drive.google.com/file/d/1j0EkPjV6ze3vHRsT7-P1uu5AMQedGBwu/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

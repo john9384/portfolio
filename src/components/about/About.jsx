@@ -25,29 +25,29 @@ function About() {
           <img src={Plan} alt="plan" />
           <h2 className="highlight__head">Plan</h2>
           <p className="highlight__note">
-            Lorem et do magna enim. Ullamco officia ad aliquip do do veniam
-            eiusmod proident enim sunt non ut mollit.
+            Plan the process from the start to the end, keeping to scheduled
+            time in order to deliver an set time.
           </p>
         </div>
         <div className="highlight__card">
           <img src={CodeIcon} alt="plan" />
           <h2 className="highlight__head">Code</h2>
           <p className="highlight__note">
-            Aliqua in sit ullamco cupidatat veniam consectetur irure nostrud
-            proident officia amet velit culpa.
+            Translate design to code, Adhering accessibility standards and best
+            practizing.
           </p>
         </div>
         <div className="highlight__card">
           <img src={Deploy} alt="plan" />
           <h2 className="highlight__head">Deploy</h2>
           <p className="highlight__note">
-            Aliquip Lorem fugiat tempor nostrud magna ipsum consectetur quis
-            proident velit non ad officia.
+            Deploy to different cloud services including Microsoft Azure, Google
+            Cloud Platform, Amazon Web Service
           </p>
         </div>
       </div>
       <a
-        href="https://drive.google.com/file/d/19Vmxk1J9JmyIcSSn5-6AvPT-KmgPKTif/view?usp=sharing"
+        href="https://drive.google.com/file/d/1j0EkPjV6ze3vHRsT7-P1uu5AMQedGBwu/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="about__cta"

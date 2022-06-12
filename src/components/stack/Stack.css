@@ -19,3 +19,7 @@
   max-width: 100%;
   height: 80px;
 }
+.stack__card span {
+  font-size: 1.5rem;
+  color: rgb(34, 34, 34);
+}

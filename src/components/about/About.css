@@ -30,6 +30,7 @@
 }
 
 .highlight__card {
+  max-width: 34%;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -48,10 +49,12 @@
   color: #002147;
   text-align: center;
   margin: 15px auto;
+  font-size: 1.8rem;
 }
 .highlight__card p {
   text-align: center;
   color: grey;
+  font-size: 1.4rem;
 }
 
 .about__cta {
